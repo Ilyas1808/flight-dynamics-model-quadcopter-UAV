@@ -36,8 +36,8 @@ end_time_str = end_time.strftime("%Y-%m-%dT%H:%M:%SZ")
 data=""
 url = f"https://api.meteomatics.com/{start_time_str}--{end_time_str}:PT1H/wind_speed_10m:ms,wind_gusts_10m_24h:ms,wind_dir_10m:d/50.4714388,4.1852956/html"
 
-username = 'student_elmadani_ilyas'
-password = 'BXP82qf09f'
+username = '...' #confidential, make an account 
+password = '...'
 
 response = requests.get(url, auth=(username, password))
 
